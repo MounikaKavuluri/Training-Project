@@ -15,29 +15,29 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="app/css/app.css">
 
 </head>
 
 <body>
 
-  <div ng-include="'partials/header.html'">  </div>
+  <div ng-include="'app/partials/header.html'">  </div>
 
-  <div ui-view></div>
+  <div data-ui-view></div>
 
-  <div ng-include="'partials/footer.html'"> </div>
+  <div ng-include="'app/partials/footer.html'"> </div>
 
 </body>
 
 <script src="bower_components/angular/angular.js"></script>
-<script src="../bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-<script src="modules/app.module.js"></script>
-<script src="modules/app.config.js"></script>
-<script src="modules/app.run.js"></script>
-<script src="modules/home/home.module.js"></script>
-<script src="modules/home/home.controller.js"></script>
+<script src="app/modules/app.module.js"></script>
+<script src="app/modules/app.config.js"></script>
+<script src="app/modules/app.run.js"></script>
+<script src="app/modules/home/home.module.js"></script>
+<script src="app/modules/home/home.controller.js"></script>
 
 </html>

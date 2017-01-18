@@ -3,11 +3,25 @@
     angular
         .module('cart.home')
         .controller('homeController', homeController);
-    
-    function homeController() {
 
-        var va = this;
-        console.log("In Controller");
+    homeController.$inject = ['$http', '$rootScope'];
 
+    function homeController($http, $rootScope) {
+        console.log("home controler");
+
+        $http.get('/app/Json/SampleData.json')
+            .success(function(printData)
+            {
+                console.log(printData)
+                /*parseData(homeController);*/
+
+                $rootScope.products = {};
+                $rootScope.product = printData;
+                console.log(" #### "+$rootScope.products);
+
+            })
+            .error(function() {
+                console.log("File not found");
+            });
     }
 }());

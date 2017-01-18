@@ -2,14 +2,23 @@
     angular
         .module("shoppingcart")
         .config(function ($stateProvider, $urlRouterProvider) {
+
+            console.log("in app config");
         // $locationProvider.htmlmode(true);
 
-        $stateProvider.state('home' , {
-            url: "/",
-            controller: 'homeController',
-            controllerAs : 'hcntrl',
+        $stateProvider.state('header' , {
+            url: "/header",
+            controller: 'headController',
+            controllerAs : 'headcntrl',
             templateUrl : '/app/partials/header.html'
         });
-        // $urlRouterProvider.otherwise('home');
+
+        $stateProvider.state('/' , {
+            url: "/",
+            controller: 'homeController',
+            controllerAs: 'hcntrl',
+            templateUrl : '/app/partials/home.html'
+        });
+         $urlRouterProvider.otherwise('/');
     })
 })();
