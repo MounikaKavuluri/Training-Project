@@ -14,12 +14,11 @@
             .success(function(printData)
             {
                 def.resolve(printData);
-                /*parseData(homeController);*/
 
                 $rootScope.products = [];
                 $rootScope.products = printData;
                 console.log(" #### "+$rootScope.products);
-                console.log(products);
+                //console.log(products);
             })
             .error(function() {
                 def.reject("Error: File not found!");

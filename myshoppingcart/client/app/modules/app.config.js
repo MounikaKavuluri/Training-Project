@@ -5,20 +5,18 @@
 
             console.log("in app config");
         // $locationProvider.htmlmode(true);
-
+            $urlRouterProvider.otherwise("/")
         $stateProvider.state('header' , {
             url: "/header",
             controller: 'headController',
             controllerAs : 'headcntrl',
             templateUrl : '/app/partials/header.html'
-        });
-
-        $stateProvider.state('/' , {
+        })
+            .state('/' , {
             url: "/",
             controller: 'homeController',
             controllerAs: 'hcntrl',
             templateUrl : '/app/partials/home.html'
         });
-         $urlRouterProvider.otherwise('/');
     })
 })();

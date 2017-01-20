@@ -4,7 +4,7 @@
 <body>
     <div class="home-container">
         <div class="row"> <br />
-            <div class="col-md-4" ng:repeat="product in products | orderBy:'rating'| limitTo:5">
+            <div class="col-md-4" ng:repeat="product in products | orderBy:'rating'">
                 <img class="imgsize" src="/app/images/mobiles/{{product.id}}.jpg"><br />
                 <div class="col-sm-4"> Name: {{product.name}}</div> <br /><br />
                 <div class="col-sm-4" >Price : {{product.price}}</div><br />

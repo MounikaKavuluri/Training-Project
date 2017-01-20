@@ -2,7 +2,8 @@
     angular
         .module("shoppingcart", [
             "cart.home",
-            "ui.router"
+            "ui.router",
+            "cart.head"
         ])
 
 }());
