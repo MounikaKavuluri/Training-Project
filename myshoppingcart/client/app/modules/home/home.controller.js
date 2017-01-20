@@ -4,24 +4,27 @@
         .module('cart.home')
         .controller('homeController', homeController);
 
-    homeController.$inject = ['$http', '$rootScope'];
+    homeController.$inject = ['$http', '$rootScope', '$q'];
 
-    function homeController($http, $rootScope) {
+    function homeController($http, $rootScope, $q) {
         console.log("home controler");
 
+        var def = $q.defer();
         $http.get('/app/Json/SampleData.json')
             .success(function(printData)
             {
-                console.log(printData)
+                def.resolve(printData);
                 /*parseData(homeController);*/
 
-                $rootScope.products = {};
-                $rootScope.product = printData;
+                $rootScope.products = [];
+                $rootScope.products = printData;
                 console.log(" #### "+$rootScope.products);
-
+                console.log(products);
             })
             .error(function() {
-                console.log("File not found");
+                def.reject("Error: File not found!");
             });
+
+        return def.promise;
     }
 }());

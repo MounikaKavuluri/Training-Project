@@ -40,7 +40,8 @@
         "type": "discount",
         "percentage": 10
       }
-    ]
+    ],
+    "rating": "3"
   },
   {
     "id": "ELEC_PRD_2",
@@ -83,18 +84,19 @@
         "type": "discount",
         "percentage": 10
       }
-    ]
+    ],
+    "rating": "4"
   },
   {
     "id": "ELEC_PRD_3",
-    "name": "SAMSUNG Galaxy On3",
+    "name": "SAMSUNG Galaxy On7",
     "price": 15500,
-    "description": "SAMSUNG Galaxy On3 is a smart phone and blah blah",
+    "description": "SAMSUNG Galaxy On7 is a smart phone and blah blah",
     "type": "electronics",
     "subType": "mobile",
     "brand": "Samsung",
     "RAM": "1GB",
-    "modelName": "Galaxy On3",
+    "modelName": "Galaxy On7",
     "color": "Gold",
     "battery": "2600 mAh Li-Ion Battery",
     "camera": {
@@ -104,7 +106,7 @@
     "comments": [
       {
         "text": "Worst phone",
-        "rating": "1",
+        "rating": "4",
         "commentedOn": "13/01/2017",
         "username": "Jhon Deo"
       },
@@ -126,7 +128,8 @@
         "type": "discount",
         "percentage": 10
       }
-    ]
+    ],
+    "rating": "5"
   },
   {
     "id":"ELEC_PRD_4",
@@ -155,7 +158,7 @@
       },
       {
         "text": "Worth price. The notebook does not look cheap from any angle. Some have even confused this with the Galaxy A5, so this says a lot!",
-        "rating": "1",
+        "rating": "2",
         "commentedOn": "14/01/2017",
         "username": "Jhon Deo Sister"
       }
@@ -165,7 +168,8 @@
         "type": "exchange",
         "amount": 2000
       }
-    ]
+    ],
+    "rating": "4"
   },
   {
     "id":"ELEC_PRD_5",
@@ -204,11 +208,12 @@
         "type": "No exchange",
         "amount": 0
       }
-    ]
+    ],
+    "rating": "5"
   },
   {
     "id":"ELEC_PRD_6",
-    "name": "HP 14-AM081TU ",
+    "name": "HP 14-AM081TU",
     "price": 39990.00,
     "description": "4 cell Lithium ion battery allows you to keep working for longer.",
     "type": "electronics",
@@ -243,7 +248,8 @@
         "type": "AmazonBasics 14-Inch Laptop Sleeves (Black)",
         "amount": 849
       }
-    ]
+    ],
+    "rating": "5"
   },
   {
     "id":"ELEC_PRD_7",
@@ -282,11 +288,12 @@
         "type": "OnsiteGo 2 Year Extended Warranty for Laptops from Rs. 50001 to Rs. 70000",
         "amount": 5999
       }
-    ]
+    ],
+    "rating": "5"
   },
   {
     "id":"ELEC_PRD_8",
-    "name": "Asus X540LA-XX596D ",
+    "name": "Asus X540LA-XX596D",
     "price":  24999.00,
     "description": "Its only for beginners to do basic works.",
     "type": "electronics",
@@ -321,7 +328,8 @@
         "type": "No offer",
         "amount": 0
       }
-    ]
+    ],
+    "rating": "4"
   },
   {
     "id":"ELEC_PRD_9",
@@ -360,11 +368,12 @@
         "type": "Acer Laptop Backpack",
         "amount": 499
       }
-    ]
+    ],
+    "rating": "3"
   },
   {
     "id":"ELEC_PRD_10",
-    "name": "Micromax Canvas Lapbook ",
+    "name": "Micromax Canvas Lapbook",
     "price":  9490.00,
     "description": "Make a snappy & brilliant start every time on the Canvas Lapbook L1160.",
     "type": "electronics",
@@ -399,6 +408,7 @@
         "type": "Saco Soft Durable Pouch for HCL ME G1 10 inch Tablet",
         "amount": 400
       }
-    ]
+    ],
+    "rating": "3"
   }
 ]
