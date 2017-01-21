@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> MY SHOPPING CART </title>
+</head>
+
+<body>
+<div class="header"> <h1> <b> MY SHOPPING CART </b> </h1> </div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!--<div class="navbar-header">
+          <a class="navbar-brand" href="#"> </a>
+        </div>-->
+
+        <div class="collapse navbar-collapse" id="navbar"> <br />
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Electronics<span class="caret"></span></a>
+                    <ul class="dropdown-content" role="menu">
+                        <a href="#">Mobiles</a>
+                        <a href="#">Laptops</a>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Books <span class="caret"></span></a>
+                    <ul class="dropdown-content" role="menu">
+                        <a href="#">Fiction</a>
+                        <a href="#">Comic</a>
+                        <a href="#">Biographies</a>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <div class="search-autocomplete"> <center>
+                <div class="input-group col-md-8">
+                <input type="text" class="search-query form-control" placeholder="Search" span class="input-group-btn">
+                <ui-select ng-model = 'headcntrl.products' theme='bootstrap' reset-search-input='false'>
+                    <ui-select-match placeHolder="Search for Product Name or Brand " id="autocomplete">
+                        {{$select.selected.name}}
+                    </ui-select-match>
+
+                    <ui-select-choices refresh="headcntrl.checkName($select.search)"
+                                       refresh-delay="0"
+                                       repeat = 'product in products | filter:$select.search | limitTo: headcntrl.limitNameSearch'>
+                        {{product.name}}
+                    </ui-select-choices>
+
+                </ui-select>
+                <button class="btn btn-success" type="button">
+                    <span class=" glyphicon glyphicon-search"></span>
+                </button>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul> </div> </center> </div>
+        </div>
+
+        <div >
+
+        </div>
+    </div>
+
+    </div>
+</nav>
+
+
+</body>
+</html>
