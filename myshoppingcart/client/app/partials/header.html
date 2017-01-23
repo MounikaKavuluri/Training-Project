@@ -35,13 +35,15 @@
             </ul>
 
 
-            <div class="search-autocomplete"> <center>
-                <div class="input-group col-md-8">
-                <input type="text" class="search-query form-control" placeholder="Search" span class="input-group-btn">
-                <ui-select ng-model = 'headcntrl.products' theme='bootstrap' reset-search-input='false'>
-                    <ui-select-match placeHolder="Search for Product Name or Brand " id="autocomplete">
+            <div class="input-group col-md-8"  ng-controller="headerController as headcntrl"> <center>
+               <!-- <input type="text" class="search-query form-control" placeholder="Search" span class="input-group-btn">-->
+                <ui-select class="search"  ng-model = 'headcntrl.products' theme='bootstrap' reset-search-input='false' >
+                    <ui-select-match placeHolder="Search for Product Name or Brand " id="autocomplete" >
                         {{$select.selected.name}}
+
                     </ui-select-match>
+
+                    </ui-select-choices>
 
                     <ui-select-choices refresh="headcntrl.checkName($select.search)"
                                        refresh-delay="0"
@@ -52,13 +54,15 @@
                 </ui-select>
                 <button class="btn btn-success" type="button">
                     <span class=" glyphicon glyphicon-search"></span>
-                </button>
+                </button>  </center>
 
+            </div>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul> </div> </center> </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+
         </div>
 
         <div >

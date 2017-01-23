@@ -89,45 +89,6 @@ body {
   width: 80%;
 }
 
-.search-autocomplete {
-  margin:0;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.search-autocomplete .search-query {
-  /*  padding-right: 3px;
-    padding-right: 4px \9;
-    padding-left: 3px;
-    padding-left: 4px \9;*/
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-  background: none;
-  color: white;
-  width: 70%;
-  margin-bottom: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-.input-group col-md-8 button {
-  border: 0;
-
-  /** belows styles are working good */
-  margin-top: 2px;
-  position: relative;
-  left: -800%;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
- /* margin-bottom: 0;*/
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  border-radius: 5%;
-  color: white;
-}
-
-.search-query:focus + button {
-  z-index: 3;
-}
-
 .imgsize
 { /*for product images*/
   margin-left:0.3em;
@@ -146,3 +107,17 @@ body {
   width: 30%;
   height: 40%;
 }
+
+.search {
+  margin:0;
+  margin-top: 0;
+  padding: 0;
+  background: none;
+  color: white;
+  width: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+

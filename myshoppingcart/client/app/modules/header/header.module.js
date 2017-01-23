@@ -1,7 +1,5 @@
 (function () {
     angular
-        .module( "cart.head", [
-
-        ]);
+        .module( 'cart.head', []);
 
 }());

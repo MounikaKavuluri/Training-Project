@@ -4,12 +4,28 @@
 <body>
     <div class="home-container">
         <div class="row"> <br />
-            <div class="col-md-4" ng:repeat="product in products | orderBy:'rating'">
-                <img class="imgsize" src="/app/images/mobiles/{{product.id}}.jpg"><br />
+            <div class="col-md-4" ng:repeat="product in products | orderBy:'rating' | filter: { subType: 'mobile' } | limitTo: 5 ">
+                <a ui-sref="view({id:product.id})" ><img class="imgsize" ng-src="/app/images/mobiles/{{product.id}}.jpg"><br /> </a>  </div>
                 <div class="col-sm-4"> Name: {{product.name}}</div> <br /><br />
-                <div class="col-sm-4" >Price : {{product.price}}</div><br />
-
+                <div class="col-sm-4" >Price : {{product.price | currency:'&#8377;'}}</div><br />
+                <div class="col-sm-4" >Rating : {{product.rating}}</div><br />
             </div>
+
+            <div class="col-md-4" ng:repeat="product in products | orderBy:'rating' | filter: { subType: 'laptop' } | limitTo: 10 ">
+                <a ui-sref="view({id:product.id})" ><img class="imgsize" ng-src="/app/images/laptops/{{product.id}}.jpg"></a><br />
+                <div class="col-sm-4"> Name: {{product.name}}</div> <br /><br />
+                <div class="col-sm-4" >Price : {{product.price | currency:'&#8377;'}}</div><br />
+                <div class="col-sm-4" >Rating : {{product.rating}}</div><br />
+            </div>
+
+           <!-- <div class="col-md-4" ng:repeat="product in products | orderBy:'rating' | filter: { subType: 'comic' } | limitTo: 10 ">
+                <img class="imgsize" ng-src="/app/images/laptops/{{product.id}}.jpg"><br />
+                <div class="col-sm-4"> Name: {{product.name}}</div> <br /><br />
+                <div class="col-sm-4" >Price : {{product.price | currency:'&#8377;'}}</div><br />
+                <div class="col-sm-4" >Rating : {{product.rating}}</div><br />
+            </div>-->
+
+
         </div>
     </div>
 

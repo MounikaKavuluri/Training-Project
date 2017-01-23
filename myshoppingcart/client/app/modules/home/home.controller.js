@@ -4,26 +4,44 @@
         .module('cart.home')
         .controller('homeController', homeController);
 
-    homeController.$inject = ['$http', '$rootScope', '$q'];
+    homeController.$inject = ['homeFactory','$rootScope'];
 
-    function homeController($http, $rootScope, $q) {
+    function homeController(homeFactory,$rootScope) {
+
+        var vm = this;
         console.log("home controler");
 
-        var def = $q.defer();
-        $http.get('/app/Json/SampleData.json')
-            .success(function(printData)
+        vm.getData = function() {
+            homeFactory.getData()
+                .then(function(printData)
+                    {
+                        $rootScope.products = {};
+                        $rootScope.products = printData;
+
+                    },
+                    function(printData) {
+                        console.log('Error in data retrieval');
+                    });
+        };
+
+        vm.getData();
+
+
+        /* ****
+         on entering minimum characters to show autocomplete suggestions
+         ***** */
+        vm.limitNameSearch = 500; //time for displaying suggestion
+        vm.searchName = function(keyword)
+        {
+
+            if(keyword.length > 2)
             {
-                def.resolve(printData);
+                vm.limitNameSearch = 500;
+            }
+            else{
+                vm.limitNameSearch = 0;
+            }
+        }
 
-                $rootScope.products = [];
-                $rootScope.products = printData;
-                console.log(" #### "+$rootScope.products);
-                //console.log(products);
-            })
-            .error(function() {
-                def.reject("Error: File not found!");
-            });
-
-        return def.promise;
     }
 }());
