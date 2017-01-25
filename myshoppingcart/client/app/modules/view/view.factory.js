@@ -1,7 +1,7 @@
 (function()
 {
     angular
-        .module('viewModule')
+        .module('cart.view')
         .factory('viewFactory',viewFactory);
 
     console.log('In View Factory');
@@ -9,11 +9,11 @@
 
     function viewFactory($rootScope)
     {
-        var service =
+        var prod =
             {
                 getProduct : getProduct
             };
-        return service;
+        return prod;
 
         function getProduct(id,products)
         {
@@ -22,7 +22,11 @@
             {
 
                 if(products[i].id == id)
+                {
+
+                    console.log("Product  found "+id);
                     return products[i]
+                }
             }
 
         }

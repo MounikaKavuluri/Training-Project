@@ -20,7 +20,7 @@
                 name: 'view',
                 url: '/view/:id',
                 templateUrl: '/app/partials/view.html',
-                controller: 'viewController',
+                controller: 'ViewController',
                 controllerAs: 'viewcntrl'
             });
 

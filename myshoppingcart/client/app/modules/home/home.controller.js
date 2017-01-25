@@ -27,9 +27,7 @@
         vm.getData();
 
 
-        /* ****
-         on entering minimum characters to show autocomplete suggestions
-         ***** */
+       /* Autocomplete */
         vm.limitNameSearch = 500; //time for displaying suggestion
         vm.searchName = function(keyword)
         {

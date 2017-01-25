@@ -4,7 +4,8 @@
             "cart.home",
             "ui.router",
             "cart.head",
-            "viewModule"
+            "cart.view",
+            "ngRateIt"
         ])
 
 }());

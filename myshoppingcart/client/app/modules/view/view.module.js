@@ -1,6 +1,4 @@
-(function()
-{
+(function () {
     angular
-        .module('viewModule', ['ui.select']);
+        .module('cart.view', ['ui.select']);
 }());
-
