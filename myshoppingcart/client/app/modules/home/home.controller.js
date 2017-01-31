@@ -3,6 +3,7 @@
     angular
         .module('cart.home')
         .controller('homeController', homeController);
+<<<<<<< Updated upstream
 
     homeController.$inject = ['homeFactory','$rootScope'];
 
@@ -40,6 +41,16 @@
                 vm.limitNameSearch = 0;
             }
         }
+=======
+
+    homeController.$inject = ['$rootScope'];
+    
+    function homeController($roootScope) {
+
+        var va = this;
+        console.log("In Controller");
+        va.products = $rootScope.products;
+>>>>>>> Stashed changes
 
     }
 }());
