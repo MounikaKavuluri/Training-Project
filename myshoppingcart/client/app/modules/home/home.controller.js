@@ -3,54 +3,22 @@
     angular
         .module('cart.home')
         .controller('homeController', homeController);
-<<<<<<< Updated upstream
 
-    homeController.$inject = ['homeFactory','$rootScope'];
-
-    function homeController(homeFactory,$rootScope) {
-
-        var vm = this;
-        console.log("home controler");
-
-        vm.getData = function() {
-            homeFactory.getData()
-                .then(function(printData)
-                    {
-                        $rootScope.products = {};
-                        $rootScope.products = printData;
-
-                    },
-                    function(printData) {
-                        console.log('Error in data retrieval');
-                    });
-        };
-
-        vm.getData();
-
-
-       /* Autocomplete */
-        vm.limitNameSearch = 500; //time for displaying suggestion
-        vm.searchName = function(keyword)
-        {
-
-            if(keyword.length > 2)
-            {
-                vm.limitNameSearch = 500;
-            }
-            else{
-                vm.limitNameSearch = 0;
-            }
-        }
-=======
-
-    homeController.$inject = ['$rootScope'];
+    homeController.$inject = ['$rootScope','homeFactory'];
     
-    function homeController($roootScope) {
+    function homeController($rootScope,homeFactory) {
 
         var va = this;
         console.log("In Controller");
         va.products = $rootScope.products;
->>>>>>> Stashed changes
+        var ref = homeFactory.getData().then(function (response) {
+            $rootScope.products = response;
+            va.products = $rootScope.products
+                console.log("in home controller response loaded is "+ $rootScope.products);
+        }, function (failed) {
+            va.products = "failed to load data";
+            console.log(va.products+" in fail");
+        });
 
     }
 }());

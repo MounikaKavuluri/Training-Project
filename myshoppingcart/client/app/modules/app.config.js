@@ -6,21 +6,23 @@
             console.log("in app config");
             // $locationProvider.htmlmode(true);
 
-            $stateProvider.state('header', {
+           /* $stateProvider.state('header', {
                 url: "/header",
                 controller: 'headController',
                 controllerAs: 'headcntrl',
                 templateUrl: '/app/partials/header.html'
-            }) .state('/', {
+            });*/
+            $stateProvider.state('/', {
                 url: "/",
                 controller: 'homeController',
                 controllerAs: 'hcntrl',
                 templateUrl: '/app/partials/home.html'
-            }) .state('view', {
-                name: 'view',
+            });
+
+            $stateProvider.state('view', {
                 url: '/view/:id',
                 templateUrl: '/app/partials/view.html',
-                controller: 'ViewController',
+                controller: 'viewController',
                 controllerAs: 'viewcntrl'
             });
 

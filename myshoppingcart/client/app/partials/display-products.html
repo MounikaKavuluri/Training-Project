@@ -1,0 +1,82 @@
+<div class="modal-body row">
+
+    <div class="col-md-3">
+
+        <picture  ng-if = 'dprod.subType == "mobile"'>
+            <img ng-src="{{'/app/images/'+dprod.paramId+'.jpg'}}" class="img-thumbnail" />
+        </picture>
+
+        <picture  ng-if = 'dprod.subType == "laptop"'>
+            <img  ng-src="{{'/app/images/'+dprod.paramId+'.jpg'}}" class="img-thumbnail" />
+        </picture>
+
+        <picture  ng-if = 'dprod.type == "books"'>
+            <img  ng-src="{{'/app/images/'+dprod.paramId+'.jpg'}}" class="img-thumbnail" />
+        </picture>
+    </div>
+
+    <div class="col-md-8">
+        <dl>
+            <dt class = "productName">{{dprod.name}}</dt>
+            <small><dd ng-if='dprod.brand'>-by {{dprod.brand}}</dd>
+                <dd ng-if='dprod.author'>-by {{dprod.author}}</dd>
+            </small>
+        </dl>
+
+        <hr/>
+        <div>
+            <span>Price : {{dprod.price | currency:'&#8377;'}}</span>
+        </div>
+        <div ng-if='dprod.modelName'>
+            <span>Model : {{dprod.modelName}}</span>
+        </div>
+        <div ng-if='dprod.ram'>
+            <span>RAM : {{dprod.ram}}</span>
+        </div>
+        <div ng-if='dprod.frontCamera'>
+            <span>Front Camera : {{dprod.frontCamera}}</span>
+        </div>
+        <div ng-if='dprod.rearCamera'>
+            <span>Rear Camera : {{dprod.rearCamera}}</span>
+            <span class="glyphicon glyphicon-camera"></span>
+        </div>
+        <div ng-if='dprod.color'>
+            <span>Color : {{dprod.color}}</span>
+        </div>
+        <div ng-if='dprod.battery'>
+            <span>Battery : {{dprod.battery}}</span>
+        </div>
+        <div ng-if='dprod.description'>
+            <span>Description : </span><p>{{dprod.description}}</p>
+        </div>
+
+        <div ng-if='dprod.rating'>
+            <label>
+                <ng-rate-it ng-model= dprod.rating  read-only="true" tooltip-placement="top" uib-tooltip="{{dprod.rating}}">
+                </ng-rate-it>
+            </label>
+        </div>
+
+        <div ng-if='dprod.offers'>
+            <div ng-repeat='offer in dprod.offers' >
+                <mark class = "offers">{{offer.type}}</mark> - <span ng-if = 'offer.amount'>{{offer.amount | currency:'&#8377;'}}</span>
+                <span ng-if = 'offer.percentage'>{{offer.percentage}}%</span>
+            </div>
+        </div>
+
+        <div ng-click='showComments = !showComments'>
+            <label>Reviews</label>
+        </div>
+        <div ng-if='dprod.comments' class = "scrollComments">
+
+            <div  ng-repeat='comment in dprod.comments' ng-show='showComments'>
+                <label><ng-rate-it ng-model= comment.rating  read-only="true" ></ng-rate-it></label>
+                <span class = "comment">By : {{comment.username}} On : {{comment.commentedOn}}<br></span>
+                <p>{{comment.text}} </p>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

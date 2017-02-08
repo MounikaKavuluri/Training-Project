@@ -5,31 +5,44 @@
         .factory('viewFactory',viewFactory);
 
     console.log('In View Factory');
-    viewFactory.$inject = ['$http','$rootScope'];
+    viewFactory.$inject = ['$http', '$rootScope'];
 
-    function viewFactory($rootScope)
+    function viewFactory($http,$rootScope)
     {
+        console.log('In *****');
         var prod =
             {
-                getProduct : getProduct
+                getProduct : getProduct,
+                getRating : getRating
             };
         return prod;
 
-        function getProduct(id,products)
+        function getProduct(id)
         {
-
-            for(var i in products)
+            console.log('In getProduct Function'+'jjjjjjjjjjjjjjjjjj  '+id+" hhhhh "+ $rootScope.products);
+            for(var i in $rootScope.products)
             {
-
-                if(products[i].id == id)
+                console.log("4444444" + $rootScope.products);
+                if($rootScope.products[i].id == id)
                 {
-
-                    console.log("Product  found "+id);
-                    return products[i]
+                    console.log("Product found "+id);
+                    return $rootScope.products[i];
                 }
             }
 
         }
 
+        function getRating(comments)
+        {
+            console.log('In Get rating Function');
+            var rating = 0;
+            for(var i in comments)
+            {
+                rating = rating + parseInt(comments[i].rating);
+            }
+
+            return (rating/comments.length).toFixed(1);
+
+        }
     }
 }());

@@ -13,7 +13,7 @@
                 templateUrl: '/app/partials/topProducts.html',
                 scope: {
                     productList: '=',
-                    productType: '@'
+                    productType: '@'//
                 },
                 link: linkFunction
             }

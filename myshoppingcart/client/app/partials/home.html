@@ -3,33 +3,18 @@
 
 <body>
 
-    <h1> </h1>
-    <div class="home-container">
-        <div class="row"> <br />
-            <div class="col-md-4" ng:repeat="product in products | orderBy:'-rating' | filter: { subType: 'mobile' } | limitTo: 5 ">
-                <a ui-sref="view({id:product.id})" ><img class="imgsize" ng-src="/app/images/{{product.id}}.jpg"> </a> <br />
-                <div class="col-sm-5"> Name: {{product.name}}</div> <br /><br />
-                <div class="col-sm-5" >Price : {{product.price | currency:'&#8377;'}}</div><br />
-                <div class="col-sm-5" >Rating : <ng-rate-it ng-model= product.rating  read-only="true" ></ng-rate-it></div><br /> <br /> <br />
-            </div>
+<div class="main" style="width: 80%; height: 100%; float:right">
+    <br /><center><h2> TOP RATED PRODUCTS   </h2></center> <br /><br />
+<!--{{hcntrl.products}}-->
+    <top-products product-list = "hcntrl.products" product-type = 'mobile'></top-products>
+    <top-products product-list = "hcntrl.products" product-type = 'laptop'></top-products>
+    <top-products product-list = "hcntrl.products" product-type = 'fiction'></top-products>
+    <top-products product-list = "hcntrl.products" product-type = 'comic'></top-products>
+    <top-products product-list = "hcntrl.products" product-type = 'biographies'></top-products>
+</div>
 
-            <div class="col-md-4" ng:repeat="product in products | orderBy:'rating' | filter: { subType: 'laptop' } | limitTo: 10 ">
-                <a ui-sref="view({id:product.id})" ><img class="imgsize" ng-src="/app/images/{{product.id}}.jpg"></a><br />
-                <div class="col-sm-5"> Name: {{product.name}}</div> <br /><br />
-                <div class="col-sm-5" >Price : {{product.price | currency:'&#8377;'}}</div><br />
-                <div class="col-sm-5" >Rating :<ng-rate-it ng-model= product.rating  read-only="true" ></ng-rate-it></div><br /> <br /> <br />
-            </div> <br /><br /><br /><br />
+<div class="verticalLine"></div>
 
-           <!-- <div class="col-md-4" ng:repeat="product in products | orderBy:'rating' | filter: { subType: 'comic' } | limitTo: 10 ">
-                <img class="imgsize" ng-src="/app/images/{{product.id}}.jpg"><br />
-                <div class="col-sm-4"> Name: {{product.name}}</div> <br /><br />
-                <div class="col-sm-4" >Price : {{product.price | currency:'&#8377;'}}</div><br />
-                <div class="col-sm-4" >Rating : {{product.rating}}</div><br />
-            </div>-->
-
-
-        </div>
-    </div>
 
 </body>
 

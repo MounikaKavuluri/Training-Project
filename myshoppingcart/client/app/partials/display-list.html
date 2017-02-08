@@ -1,0 +1,21 @@
+<div >
+
+    <h4>{{dlistctrl.productType}} List</h4>
+
+    <hr/>
+
+    <div class = "imgRepeat" ng-repeat="product in dlistctrl.productList | orderBy : '-rating' | filter: { subType: dlistctrl.productType } " >
+
+        <picture class="maximage">
+            <a ui-sref='view({id:product.id})'>
+                <img ng-src="{{'/app/images/'+product.imgPath+'.jpg'}} " ng-alt="{{product.name}}" ng-title="{{product.name}}" class="img-thumbnail" />
+            </a>
+        </picture>
+
+        {{product.name}}<br/>
+
+        Price : {{product.price | currency:'&#8377;'}}<br/>
+
+        <ng-rate-it ng-model= product.rating  read-only="true" ></ng-rate-it>
+    </div>
+</div>

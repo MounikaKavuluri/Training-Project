@@ -2185,7 +2185,7 @@
   },
   {
     "id": "Book_PRD_53",
-    "name": "Sherlock Holmes: The Complete Novels and Stories Volume I",
+    "name": "Sherlock Holmes",
     "price": 224,
     "type": "books",
     "rating": 4.5,
@@ -2227,37 +2227,37 @@
   },
   {
     "id": "Book_PRD_54",
-    "name": "Sherlock Holmes: The Complete Novels and Stories Volume I",
-    "price": 224,
+    "name": "Life is What you Make It",
+    "price": 81,
     "type": "books",
-    "rating": 4.5,
+    "rating": 3.9,
     "subType": "fiction",
-    "Author": "Conan Doyle",
+    "Author": "Preeti Shenoy",
     "Features": {
       "Language": "English",
-      "ISBN": "9780553212419",
-      "Pages" : "1086",
-      "Publisher" : "Random House Publishing Group",
-      "Edition" : "1986"
+      "ISBN": "9789380349305",
+      "Pages" : "211",
+      "Publisher" : "Srishti Publisher",
+      "Edition" : "2011"
     },
     "comments": [
       {
-        "text": "ENTHRALLING...",
+        "text": "Very True 'Life is what u make it'",
         "rating": "4",
-        "commentedOn": "08/10/2016",
-        "username": "rray"
+        "commentedOn": "025/08/2016",
+        "username": "Ravi Soni"
       },
       {
-        "text": "Classic stories but horrible paper quality",
-        "rating": "4",
-        "commentedOn": "09/07/2014",
-        "username": "Prithwiraj Pal"
+        "text": "Misleading title",
+        "rating": "3",
+        "commentedOn": "06/10/2015",
+        "username": "Prasad Jaiswal"
       },
       {
-        "text": "good better best",
-        "rating": "5",
-        "commentedOn": "27/04/2015",
-        "username": "Aritra Mazumder"
+        "text": "Nice and heart felt story",
+        "rating": "4",
+        "commentedOn": "20/06/2014",
+        "username": "Akshita Singh"
       }
     ],
     "offers": [
@@ -2269,7 +2269,7 @@
   },
   {
     "id": "Book_PRD_55",
-    "name": "The Dalai Lama's Cat: A Novel",
+    "name": "The Dalai Lama's Cat:A Novel",
     "price": 282,
     "type": "books",
     "rating": 4.5,
@@ -2310,7 +2310,7 @@
     ]
   },
   {
-    "id": "Book_PRD_55",
+    "id": "Book_PRD_56",
     "name": "One Shot",
     "price": 299,
     "type": "books",
@@ -2352,7 +2352,7 @@
     ]
   },
   {
-    "id": "Book_PRD_56",
+    "id": "Book_PRD_57",
     "name": "How Not to Make Money : A Novel Based on a True Story",
     "price": 178,
     "type": "books",
@@ -2394,7 +2394,7 @@
     ]
   },
   {
-    "id": "Book_PRD_57",
+    "id": "Book_PRD_58",
     "name": "THE NAMESAKE",
     "price": 262,
     "type": "books",
@@ -2436,7 +2436,7 @@
     ]
   },
   {
-    "id": "Book_PRD_58",
+    "id": "Book_PRD_59",
     "name": "One Indian Girl",
     "price": 70,
     "type": "books",
@@ -2478,7 +2478,7 @@
     ]
   },
   {
-    "id": "Book_PRD_59",
+    "id": "Book_PRD_60",
     "name": "PALACE OF ILLUSIONS",
     "price": 160,
     "type": "books",
@@ -2520,7 +2520,7 @@
     ]
   },
   {
-    "id": "Book_PRD_60",
+    "id": "Book_PRD_61",
     "name": "The Tirukkural : A New English Version",
     "price": 291,
     "type": "books",
@@ -2562,7 +2562,7 @@
     ]
   },
   {
-    "id": "Book_PRD_61",
+    "id": "Book_PRD_62",
     "name": "SIDNEY SHELDON'S RECKLESS",
     "price": 160,
     "type": "books",
@@ -2604,7 +2604,7 @@
     ]
   },
   {
-    "id": "Book_PRD_61",
+    "id": "Book_PRD_63",
     "name": "Forget Me Not, Stranger",
     "price": 61,
     "type": "books",
@@ -2646,8 +2646,8 @@
     ]
   },
   {
-    "id": "Book_PRD_62",
-    "name": "Harry Potter and the Cursed Child - Parts I and II ",
+    "id": "Book_PRD_64",
+    "name": "Harry Potter and the Cursed Child - Parts I and II",
     "price": 405,
     "type": "books",
     "rating": 4.4,
@@ -2688,7 +2688,7 @@
     ]
   },
   {
-    "id": "Book_PRD_63",
+    "id": "Book_PRD_65",
     "name": "She Swiped Right into My Heart",
     "price": 61,
     "type": "books",
@@ -2730,7 +2730,7 @@
     ]
   },
   {
-    "id": "Book_PRD_64",
+    "id": "Book_PRD_66",
     "name": "Our Trees Still Grow In Dehra",
     "price": 146,
     "type": "books",
@@ -2772,7 +2772,7 @@
     ]
   },
   {
-    "id": "Book_PRD_65",
+    "id": "Book_PRD_67",
     "name": "Marry Me, Stranger",
     "price": 103,
     "type": "books",
@@ -2814,7 +2814,7 @@
     ]
   },
   {
-    "id": "Book_PRD_66",
+    "id": "Book_PRD_68",
     "name": "I Too Had A Love Story",
     "price": 112,
     "type": "books",
@@ -2856,7 +2856,7 @@
     ]
   },
   {
-    "id": "Book_PRD_67",
+    "id": "Book_PRD_69",
     "name": "To Kill A Mockingbird",
     "price": 160,
     "type": "books",
@@ -2898,7 +2898,7 @@
     ]
   },
   {
-    "id": "Book_PRD_68",
+    "id": "Book_PRD_70",
     "name": "It's Not Right But It's Okay",
     "price": 71,
     "type": "books",
@@ -2940,7 +2940,7 @@
     ]
   },
   {
-    "id": "Book_PRD_69",
+    "id": "Book_PRD_71",
     "name": "Our Impossible Love",
     "price": 61,
     "type": "books",
@@ -2982,7 +2982,7 @@
     ]
   },
   {
-    "id": "Book_PRD_70",
+    "id": "Book_PRD_72",
     "name": "The Sialkot Saga",
     "price": 123,
     "type": "books",
@@ -3020,6 +3020,672 @@
       {
         "type": "discount",
         "percentage": 20
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_73",
+    "name": "Complete Adventures of Feluda Vol.1",
+    "price": 297,
+    "type": "books",
+    "rating": 4.6,
+    "subType": "fiction",
+    "Author": "Satyajit Ray",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780143425038",
+      "Pages" : "804",
+      "Publisher" : "Penguin Books Ltd",
+      "Edition" : "1, 2015"
+    },
+    "comments": [
+      {
+        "text": "Pretty good",
+        "rating": "4",
+        "commentedOn": "21/01/2017",
+        "username": "Soumyadeep Das"
+      },
+      {
+        "text": "Fair",
+        "rating": "5",
+        "commentedOn": "18/05/2016",
+        "username": "Monica MGM"
+      },
+      {
+        "text": "Good",
+        "rating": "4",
+        "commentedOn": "15/12/2016",
+        "username": "Susanta Saha"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 25
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_74",
+    "name": "Fifty Shades of Grey",
+    "price": 158,
+    "type": "books",
+    "rating": 3.5,
+    "subType": "fiction",
+    "Author": "E L James",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780099579939",
+      "Pages" : "514",
+      "Publisher" : "Random House",
+      "Edition" : "2012"
+    },
+    "comments": [
+      {
+        "text": "Not for the teens (explicit)",
+        "rating": "4",
+        "commentedOn": "06/01/2016",
+        "username": "Ashish Sondhi"
+      },
+      {
+        "text": "Not worth either the time or the patience",
+        "rating": "2",
+        "commentedOn": "08/08/2016",
+        "username": "Puloma Chakrabarty"
+      },
+      {
+        "text": "An adult novel in disguise",
+        "rating": "3",
+        "commentedOn": "25/03/2016",
+        "username": "Raj Das"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_75",
+    "name": "The Girl on the Train",
+    "price": 357,
+    "type": "books",
+    "rating": 3.9,
+    "subType": "fiction",
+    "Author": "Paula Hawkins",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780857522320",
+      "Pages" : "384",
+      "Publisher" : "Transworld",
+      "Edition" : "2015"
+    },
+    "comments": [
+      {
+        "text": "Haven't read a first-timer with so much interest..Paula kept me glued ...A treat for Fiction lovers!",
+        "rating": "4",
+        "commentedOn": "15/09/2015",
+        "username": "Tejaswnee Deshpande"
+      },
+      {
+        "text": "Loved the book",
+        "rating": "3",
+        "commentedOn": "10/08/2015",
+        "username": "Rivca Elias"
+      },
+      {
+        "text": "Perfect product!",
+        "rating": "4",
+        "commentedOn": "20/07/2016",
+        "username": "Srouti Banerjee"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_76",
+    "name": "Diary of a Wimpy Kid The Ugly Truth",
+    "price": 198,
+    "type": "books",
+    "rating": 4.5,
+    "subType": "comic",
+    "Author": "Jeff Kinney",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780141340821",
+      "Pages" : "224",
+      "Publisher" : "Penguin Books Ltd",
+      "Edition" : "2010"
+    },
+    "comments": [
+      {
+        "text": "d fun continues...",
+        "rating": "4",
+        "commentedOn": "23/09/2016",
+        "username": "Satvik Gupta"
+      },
+      {
+        "text": "Funiest one of wimpy kid",
+        "rating": "5",
+        "commentedOn": "10/10/2015",
+        "username": "ViShnu K"
+      },
+      {
+        "text": "Excellent",
+        "rating": "4",
+        "commentedOn": "20/04/2016",
+        "username": "Parveen Kaur"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_77",
+    "name": "The Wimpy Kid Do -It- Yourself Book",
+    "price": 165,
+    "type": "books",
+    "rating": 4.4,
+    "subType": "comic",
+    "Author": "Jeff Kinney",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780141339665",
+      "Pages" : "240",
+      "Publisher" : "Penguin Books Ltd",
+      "Edition" : "1"
+    },
+    "comments": [
+      {
+        "text": "Good Book To Keep Memories Alive",
+        "rating": "4",
+        "commentedOn": "23/01/2015",
+        "username": "Shaishav Sood"
+      },
+      {
+        "text": "Diary of a wimpy kid :do it yourself",
+        "rating": "4",
+        "commentedOn": "10/03/2015",
+        "username": "sreerupa roy"
+      },
+      {
+        "text": "Awesome activity book!!",
+        "rating": "3",
+        "commentedOn": "18/07/2015",
+        "username": "Avijit Chandra"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_78",
+    "name": "The Amazing Spider - Man : Beware the Lizard",
+    "price": 47,
+    "type": "books",
+    "rating": 3,
+    "subType": "comic",
+    "Author": "Nachie Castro",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9789351037453",
+      "Pages" : "24",
+      "Publisher" : "Scholastic",
+      "Edition" : "2015"
+    },
+    "comments": [
+      {
+        "text": "Good",
+        "rating": "3",
+        "commentedOn": "23/07/2016",
+        "username": "Dev"
+      },
+      {
+        "text": "Hated it!",
+        "rating": "1",
+        "commentedOn": "06/09/2016",
+        "username": "Devasis Gantayet"
+      },
+      {
+        "text": "Useless product",
+        "rating": "1",
+        "commentedOn": "28/01/2017",
+        "username": "Anindita Nath"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 25
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_79",
+    "name": "Percy Jackson and the Lightning Thief",
+    "price": 231,
+    "type": "books",
+    "rating": 4.3,
+    "subType": "comic",
+    "Author": "Rick Riordan",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780141335391",
+      "Pages" : "128",
+      "Publisher" : "Penguin Books Ltd",
+      "Edition" : "2010"
+    },
+    "comments": [
+      {
+        "text": "limited yet nice read..",
+        "rating": "4",
+        "commentedOn": "08/02/2012",
+        "username": "Saumil Bole"
+      },
+      {
+        "text": "Great read if you've already read the books.",
+        "rating": "4",
+        "commentedOn": "10/10/2013",
+        "username": "Shehban Patel"
+      },
+      {
+        "text": "GOOD BOOK",
+        "rating": "5",
+        "commentedOn": "09/08/2013",
+        "username": "aryan shukla"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_80",
+    "name": "The Avengers - The S.H.I.E.L.D. Files",
+    "price": 90,
+    "type": "books",
+    "rating": 3.4,
+    "subType": "comic",
+    "Author": "Scott Peterson",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780141335391",
+      "Pages" : "24",
+      "Publisher" : "Scholastic",
+      "Edition" : "2015"
+    },
+    "comments": [
+      {
+        "text": "Very poor",
+        "rating": "1",
+        "commentedOn": "19/10/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Unsatisfactory",
+        "rating": "1",
+        "commentedOn": "10/11/2016",
+        "username": "kushagra gupta"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_81",
+    "name": "Zen Pencils:Cartoon Quotes from Inspirational Folks",
+    "price": 491,
+    "type": "books",
+    "rating": 4.8,
+    "subType": "comic",
+    "Author": "Gavin Aung",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9781449457952",
+      "Pages" : "176",
+      "Publisher" : "Andrews McMeel Publishing",
+      "Edition" : "2014"
+    },
+    "comments": [
+      {
+        "text": "The right amount of inspiration",
+        "rating": "4",
+        "commentedOn": "22/11/2014",
+        "username": "Sravanthi Bhamidi"
+      },
+      {
+        "text": "One of the Best of its kind!",
+        "rating": "5",
+        "commentedOn": "16/04/2015",
+        "username": "Sunando Patra"
+      },
+      {
+        "text": "Inspiration in Trying times!",
+        "rating": "5",
+        "commentedOn": "17/04/2015",
+        "username": "Gourav Choudhary"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_82",
+    "name": "Quidditch Through the Ages : Comic Relie",
+    "price": 299,
+    "type": "books",
+    "rating": 4.4,
+    "subType": "comic",
+    "Author": "J. K. Rowling",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9781408803028",
+      "Pages" : "128",
+      "Publisher" : "BLOOMSBURY",
+      "Edition" : "2011"
+    },
+    "comments": [
+      {
+        "text": "Not at all for non-harry potter fans",
+        "rating": "4",
+        "commentedOn": "07/10/2012",
+        "username": "Aastha Arora"
+      },
+      {
+        "text": "This book is fab!!! Thanks J.K. Rowling!!!!!",
+        "rating": "4",
+        "commentedOn": "11/10/2013",
+        "username": "Pragati Bal"
+      },
+      {
+        "text": "Only for Harry Potter fanatics...",
+        "rating": "4",
+        "commentedOn": "01/04/2014",
+        "username": "Dhananjay Deshmukh"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_83",
+    "name": "Thea Stilton and the Tropical Treasure",
+    "price": 238,
+    "type": "books",
+    "rating": 4.8,
+    "subType": "comic",
+    "Author": "Thea Stilton",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9789351032083",
+      "Pages" : "176",
+      "Publisher" : "Scholastic",
+      "Edition" : "2015"
+    },
+    "comments": [
+      {
+        "text": "Simply awesome",
+        "rating": "5",
+        "commentedOn": "08/09/2016",
+        "username": "Subhalakshmi Nath"
+      },
+      {
+        "text": "very good",
+        "rating": "5",
+        "commentedOn": "12/12/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Best in the market!",
+        "rating": "5",
+        "commentedOn": "06/02/2017",
+        "username": "vinod kumar gupta"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_84",
+    "name": "Geronimo Stilton Graphic Novels #2",
+    "price": 215,
+    "type": "books",
+    "rating": 4.6,
+    "subType": "comic",
+    "Author": "Geronimo Stilton",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9781597071901",
+      "Pages" : "56",
+      "Publisher" : "Papercutz",
+      "Edition" : "1, 2009"
+    },
+    "comments": [
+      {
+        "text": "Simply awesome",
+        "rating": "5",
+        "commentedOn": "08/09/2016",
+        "username": "Subhalakshmi Nath"
+      },
+      {
+        "text": "very good",
+        "rating": "5",
+        "commentedOn": "12/12/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Best in the market!",
+        "rating": "5",
+        "commentedOn": "06/02/2017",
+        "username": "vinod kumar gupta"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_85",
+    "name": "Asterix and Son",
+    "price": 374,
+    "type": "books",
+    "rating": 4.9,
+    "subType": "comic",
+    "Author": "Geronimo Stilton",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9780752847757",
+      "Pages" : "48",
+      "Publisher" : "Hachette Children's Group",
+      "Edition" : "2012"
+    },
+    "comments": [
+      {
+        "text": "Simply awesome",
+        "rating": "5",
+        "commentedOn": "08/09/2016",
+        "username": "Subhalakshmi Nath"
+      },
+      {
+        "text": "very good",
+        "rating": "5",
+        "commentedOn": "12/12/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Best in the market!",
+        "rating": "5",
+        "commentedOn": "06/02/2017",
+        "username": "vinod kumar gupta"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_86",
+    "name": "Asterix Omnibus 1",
+    "price": 809,
+    "type": "books",
+    "rating": 4.8,
+    "subType": "comic",
+    "Author": "Rene Goscinny,Albert Uderzo",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9781444004236",
+      "Pages" : "152",
+      "Publisher" : "Hachette Children's Group",
+      "Edition" : "2011"
+    },
+    "comments": [
+      {
+        "text": "You need a review to buy Asterix? C'mon, really.",
+        "rating": "5",
+        "commentedOn": "09/01/2014",
+        "username": "Saurabh Kanwar"
+      },
+      {
+        "text": "Superb",
+        "rating": "5",
+        "commentedOn": "16/08/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Good reading for children and adults both.",
+        "rating": "5",
+        "commentedOn": "17/11/2015",
+        "username": "Rajesh Jha"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_87",
+    "name": "TABBY MCTAT",
+    "price": 300,
+    "type": "books",
+    "rating": 4,
+    "subType": "comic",
+    "Author": "Julia Donaldson",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9781407109275",
+      "Pages" : "32",
+      "Publisher" : "Scholastic India",
+      "Edition" : "2010"
+    },
+    "comments": [
+      {
+        "text": "You need a review to buy Asterix? C'mon, really.",
+        "rating": "5",
+        "commentedOn": "09/01/2014",
+        "username": "Saurabh Kanwar"
+      },
+      {
+        "text": "Superb",
+        "rating": "5",
+        "commentedOn": "16/08/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Good reading for children and adults both.",
+        "rating": "5",
+        "commentedOn": "17/11/2015",
+        "username": "Rajesh Jha"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
+      }
+    ]
+  },
+  {
+    "id": "Book_PRD_88",
+    "name": "Disney Frozen A Sister More Like Me",
+    "price": 200,
+    "type": "books",
+    "rating": 5,
+    "subType": "comic",
+    "Author": "Parragon",
+    "Features": {
+      "Language": "English",
+      "ISBN": " 9781472377470",
+      "Pages" : "40",
+      "Publisher" : "Parragon Publishing",
+      "Edition" : "2014"
+    },
+    "comments": [
+      {
+        "text": "You need a review to buy Asterix? C'mon, really.",
+        "rating": "5",
+        "commentedOn": "09/01/2014",
+        "username": "Saurabh Kanwar"
+      },
+      {
+        "text": "Superb",
+        "rating": "5",
+        "commentedOn": "16/08/2016",
+        "username": "Flipkart Customer"
+      },
+      {
+        "text": "Good reading for children and adults both.",
+        "rating": "5",
+        "commentedOn": "17/11/2015",
+        "username": "Rajesh Jha"
+      }
+    ],
+    "offers": [
+      {
+        "type": "discount",
+        "percentage": 5
       }
     ]
   }

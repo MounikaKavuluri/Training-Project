@@ -4,90 +4,113 @@
 <body>
     <div class="col-sm-10 col-md-12">
 
-        <div class="modal-body row">
+        <!--<div class="modal-body row">
             <div class="col-md-6">
-               <!-- {{viewcntrl.id}}-->
+               &lt;!&ndash; {{viewcntrl.id}}&ndash;&gt;
 
-                <picture>
+                <picture ng-if='viewcntrl.subType == "mobile"'>
+                    <img class="view-image" ng-src="{{'/app/images/'+ viewcntrl.sp.id + '.jpg'}}" />
+                </picture>
+
+                <picture ng-if='viewcntrl.subType == "laptop"'>
+                    <img class="view-image" ng-src="{{'/app/images/'+ viewcntrl.sp.id + '.jpg'}}" />
+                </picture>
+
+                <picture ng-if='viewcntrl.subType == "fiction"'>
+                    <img class="view-image" ng-src="{{'/app/images/'+ viewcntrl.sp.id + '.jpg'}}" />
+                </picture>
+
+                <picture ng-if='viewcntrl.subType == "comic"'>
+                    <img class="view-image" ng-src="{{'/app/images/'+ viewcntrl.sp.id + '.jpg'}}" />
+                </picture>
+
+                <picture ng-if='viewcntrl.subType == "biography"'>
                     <img class="view-image" ng-src="{{'/app/images/'+ viewcntrl.sp.id + '.jpg'}}" />
                 </picture>
             </div>
 
             <div class="col-md-6">
+
                 <div>
-                    <h2><label>{{viewcntrl.name}}</label> </h2>
+                    <span> {{viewcntrl.name}}</span>
+                    <small><dd ng-if='viewcntrl.brand'>-by {{viewcntrl.brand}}</dd>
+                        <dd ng-if='viewcntrl.author'>-by {{viewcntrl.author}}</dd>
+                    </small>
                 </div>
-                <div ng-if='viewcntrl.brand'>
-                    <span> By {{viewcntrl.brand}}</span>
-                </div>
-                <div>
-                    <h2><span> {{viewcntrl.price | currency:'&#8377;'}}</span> </h2>
-                </div>
+
                 <hr/>
-                <div ng-if='viewcntrl.description'>
-                    <span><b>Description : </b> {{viewcntrl.description}}</span>
+                <div>
+                    <span>Price : {{viewcntrl.price | currency:'&#8377;'}}</span>
                 </div>
                 <div ng-if='viewcntrl.modelName'>
-                    <span><b>Model : </b> {{viewcntrl.modelName}}</span>
+                    <span>Model : {{viewcntrl.modelName}}</span>
                 </div>
                 <div ng-if='viewcntrl.ram'>
-                    <span> <b>RAM : </b> {{viewcntrl.ram}}</span>
+                    <span>RAM : {{viewcntrl.ram}}</span>
                 </div>
                 <div ng-if='viewcntrl.frontCamera'>
-                    <span> <b> Front Camera : </b> {{viewcntrl.frontCamera}}</span>
+                    <span>Front Camera : {{viewcntrl.frontCamera}}</span>
                 </div>
                 <div ng-if='viewcntrl.rearCamera'>
-                    <span> <b>Rear Camera : </b> {{viewcntrl.rearCamera}}</span>
+                    <span>Rear Camera : {{viewcntrl.rearCamera}}</span>
+                    <span class="glyphicon glyphicon-camera"></span>
                 </div>
                 <div ng-if='viewcntrl.color'>
-                    <span> <b> Color : </b> {{viewcntrl.color}}</span>
+                    <span>Color : {{viewcntrl.color}}</span>
                 </div>
                 <div ng-if='viewcntrl.battery'>
-                    <span> <b>Battery : </b> {{viewcntrl.battery}}</span>
+                    <span>Battery : {{viewcntrl.battery}}</span>
+                </div>
+                <div ng-if='viewcntrl.description'>
+                    <span>Description : {{viewcntrl.description}}</span>
                 </div>
                 <div ng-if='viewcntrl.rating'>
-                        <ng-rate-it ng-model= viewcntrl.rating  read-only="true" ></ng-rate-it>
+                    <ng-rate-it ng-model= viewcntrl.rating  read-only="true" ></ng-rate-it>
                 </div>
                 <div ng-if='viewcntrl.offers'>
                     <div ng-repeat='offer in viewcntrl.offers' >
-                       <span><b> Offer: </b> </span><mark class = "myMark">{{offer.type}}</mark> - <span ng-if = 'offer.amount'>{{offer.amount | currency:'&#8377;'}}</span>
+                        <mark class = "myMark">{{offer.type}}</mark> - <span ng-if = 'offer.amount'>{{offer.amount | currency:'&#8377;'}}</span>
                         <span ng-if = 'offer.percentage'>{{offer.percentage}}%</span>
                     </div>
                 </div>
 
-                <div ng-if='viewcntrl.comments'>
-                    <div ng-click='showComments = !showComments'><label>Comments:</label></div>
-                    <div ng-repeat='comment in viewcntrl.comments' ng-show='showComments'>
-                        <!--<br>
-                        <!--<input type = "text" ng-readonly = 'true' ng-model = 'comment.text' /><br>-->
-                        <b> By : </b> {{comment.username}} <b> On </b> : {{comment.commentedOn}} <b>Rating : </b> {{comment.rating}}<br>
-                        <p>{{comment.text}}</p>
-
+                <div ng-if='viewcntrl.comments' class ="scrollComments">
+                    <div>
+                        <div ng-click='showComments = !showComments'><label>Comments:</label></div>
+                        <div  ng-repeat='comment in viewcntrl.comments' ng-show='showComments'>
+                            By : {{comment.username}} On : {{comment.commentedOn}}  <br>
+                            <p>{{comment.text}} </p> <ng-rate-it ng-model= comment.rating  read-only="true" ></ng-rate-it>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div>-->
+        {{viewcntrl.id}}
+        <display-products product-list = products param-id = {{viewcntrl.id}}></display-products>
 
     </div>
 
+
     <div class="col-sm-12 col-md-12">
-        <h3>Similar Products</h3>
+        <h3>Similar Products</h3> {{viewcntrl.subType}}
         <hr>
 
-        <div class = "img-repeat" ng-repeat="product in products | orderBy : '-rating' | filter: { subType: viewcntrl.subType } | limitTo: 5 ">
+        <similar-products product-list = viewcntrl.products product-type = {{viewcntrl.subType}}  ></similar-products>
 
-            <picture class="maximage">
-                <a ui-sref='view({id:product.id})'>
-                    <img ng-src="{{'/app/images/'+product.id+'.jpg'}} " ng-alt="{{product.name}}" ng-title="{{product.name}}" class="img-size" />
-                </a>
-            </picture><br />
-            {{product.name}}<br/>
-            Price : {{product.price | currency:'&#8377;'}}<br/>
-            <ng-rate-it ng-model= product.rating  read-only="true" ></ng-rate-it>
+        <!--  <div class = "img-repeat" ng-repeat="product in products | orderBy : '-rating' | filter: { subType: viewcntrl.subType } | limitTo: 5 ">
 
-        </div> <br /><br /><br /><br />
-        <hr/>
+              <picture class="maximage">
+                  <a ui-sref='view({id:product.id})'>
+                      <img ng-src="{{'/app/images/'+product.id+'.jpg'}} " ng-alt="{{product.name}}" ng-title="{{product.name}}" class="img-size" />
+                  </a>
+              </picture><br />
+              {{product.name}}<br/>
+              Price : {{product.price | currency:'&#8377;'}}<br/>
+              <ng-rate-it ng-model= product.rating  read-only="true" ></ng-rate-it>
+
+          </div> <br /><br /><br /><br />
+          <hr/>-->
     </div>
 </body>
 </html>
